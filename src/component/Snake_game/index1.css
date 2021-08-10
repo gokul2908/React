@@ -1,0 +1,23 @@
+body {
+  font-size: 30px;
+}
+.board {
+  width: 100%;
+  border: 1px solid grey;
+  padding-bottom: 5px;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  height: 10%;
+}
+
+.square1 {
+  width: 10%;
+  font-weight: 900;
+  font-size: 1em;
+  border: none;
+  height: 23px;
+  text-align: center;
+}
