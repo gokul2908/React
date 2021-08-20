@@ -6,6 +6,9 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import Calculator from "./component/Calculator";
+import Snakeboard from "./component/Snake_game";
+import SnakeGame from "./component/snake_game2";
 import Game from "./component/tictok";
 
 
@@ -13,7 +16,7 @@ export default function App() {
   return (
     <Router>
       <div>
-        <nav>
+        {/* <nav>
           <ul>
             <li>
               <Link to="/">Home</Link>
@@ -25,24 +28,27 @@ export default function App() {
               <Link to="/users">Users</Link>
             </li>
           </ul>
-        </nav>
+        </nav> */}
 
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
+          <Route path="/snake2">
+            <SnakeGame />
+          </Route>
+          <Route path="/calculator">
+              <Calculator />
+          </Route>
+          <Route path="/snake">
+            <Snakeboard />
+          </Route>
           <Route path="/">
             <Game />
           </Route>
-          {/* <Route path="/users">
-            <Users />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route> */}
         </Switch>
       </div>
     </Router>
   );
 }
 
-ReactDom.render(<App />,document.getElementById('root'));
+ReactDom.render(<App />, document.getElementById('root'));

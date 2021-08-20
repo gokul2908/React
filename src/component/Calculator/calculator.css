@@ -1,0 +1,18 @@
+.button {
+    width: 70px;
+    font-size: 20px;
+  padding: 10px;
+  margin: 3px;
+  border-radius: 20%;
+};
+
+.view{
+    display: flex;
+    flex-direction: column;
+}
+
+.show_input, .give_input{
+    font-size: 25px;
+    height: 50px;
+    border: none;
+}
