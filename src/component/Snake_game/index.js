@@ -157,7 +157,7 @@ export default class Snake extends Component {
     square(value) {
         return (
             <div className="square1">
-                {value}
+                <div>{value}</div>
             </div>
         );
     }

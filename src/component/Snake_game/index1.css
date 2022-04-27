@@ -2,33 +2,37 @@ body {
   font-size: 30px;
 }
 .board {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 49vw;
+  aspect-ratio: 1/1;
   border: 1px solid grey;
-  padding-bottom: 5px;
 }
-/* *{
+/* *{ 
   border:1px solid red;
   } */
 .row {
   display: flex;
   width: 100%;
-  height: 10%;
+  height: 3.33%;
 }
 
 .square1 {
-  width: 10%;
-  font-weight: 900;
-  font-size: 1em;
-  border: none;
-  height: 23px;
+  width: 100/30%;
+  aspect-ratio: 1/1;
   text-align: center;
 }
 
+.square1 > div {
+  font-size: 2vw;
+  font-weight: bold;
+  aspect-ratio: 1/1 ;
+}
+
 .game-info{
-  display: flex;
+  display: inline;
 }
 .game-info > button{
-  width: 10%;
   height: 30px;
 }
 .game-info > h4{
